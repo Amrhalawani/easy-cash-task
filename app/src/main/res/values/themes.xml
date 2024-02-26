@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Challenge" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryDark">@color/color_main</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:fontFamily">@font/main_font_bold</item>
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--<!-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>&ndash;&gt;-->
+
+    </style>
+
+    <style name="Theme.Challenge" parent="Base.Theme.Challenge" />
+
+
+    <style name="RippleEffect">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="MatchesRecyclerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="textDayStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/color_main</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/main_font_reguler</item>
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+
+</resources>
