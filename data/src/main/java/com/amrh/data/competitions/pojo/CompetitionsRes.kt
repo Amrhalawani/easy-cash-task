@@ -24,52 +24,52 @@ data class CompetitionsRes(
 data class CompetitionsItem(
 
 	@field:SerializedName("area")
-	val area: Area? = null,
+	var area: Area? = null,
 
 	@field:SerializedName("lastUpdated")
-	val lastUpdated: String? = null,
+	var lastUpdated: String? = null,
 
 	@field:SerializedName("code")
-	val code: String? = null,
+	var code: String? = null,
 
 	@field:SerializedName("currentSeason")
-	val currentSeason: CurrentSeason? = null,
+	var currentSeason: CurrentSeason? = null,
 
 	@field:SerializedName("name")
-	val name: String? = null,
+	var name: String? = null,
 
 	@PrimaryKey
 	@field:SerializedName("id")
-	val id: Int? = null,
+	var id: Int = 0,
 
 	@field:SerializedName("numberOfAvailableSeasons")
-	val numberOfAvailableSeasons: Int? = null,
+	var numberOfAvailableSeasons: Int? = null,
 
 	@field:SerializedName("type")
-	val type: String? = null,
+	var type: String? = null,
 
 	@field:SerializedName("emblem")
-	val emblem: String? = null,
+	var emblem: String? = null,
 
 	@field:SerializedName("plan")
-	val plan: String? = null
+	var plan: String? = null
 ) : Parcelable
 
 @Parcelize
-@Entity
+
 data class Area(
 
 	@field:SerializedName("code")
-	val code: String? = null,
+	var code: String? = null,
 
 	@field:SerializedName("flag")
-	val flag: String? = null,
+	var flag: String? = null,
 
 	@field:SerializedName("name")
-	val name: String? = null,
+	var name: String? = null,
 
 	@field:SerializedName("id")
-	val id: Int? = null
+	var id: Int? = null
 ) : Parcelable
 
 @Parcelize

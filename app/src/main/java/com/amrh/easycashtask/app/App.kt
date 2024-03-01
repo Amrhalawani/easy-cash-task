@@ -1,4 +1,4 @@
-package com.amrh.eastcashtask.app
+package com.amrh.easycashtask.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

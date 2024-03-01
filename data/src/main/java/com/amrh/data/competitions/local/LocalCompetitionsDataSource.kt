@@ -20,6 +20,9 @@ class LocalCompetitionsDataSource @Inject constructor(private val competitionsDa
      fun addCompetition(item: CompetitionsItem) {
         competitionsDao.insertCompetition(item)
     }
+    fun addAllCompetition(items: List<CompetitionsItem>?) {
+        items?.let { competitionsDao.insertCompetitionsList(it) }
+    }
 
      fun deleteCompetition(item: CompetitionsItem){
         competitionsDao.deleteCompetition(item)
